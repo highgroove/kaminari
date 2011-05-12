@@ -3,12 +3,12 @@ $:.push File.expand_path("../lib", __FILE__)
 require "kaminari/version"
 
 Gem::Specification.new do |s|
-  s.name        = 'kaminari'
+  s.name        = 'dimkiriyenko-kaminari'
   s.version     = Kaminari::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ['Akira Matsuda']
-  s.email       = ['ronnie@dio.jp']
-  s.homepage    = 'https://github.com/amatsuda/kaminari'
+  s.authors     = ['Akira Matsuda','Dmitriy Kiriyenko']
+  s.email       = ['ronnie@dio.jp', 'dmitriy.kiriyenko@gmail.com']
+  s.homepage    = 'https://github.com/dmitriy-kiriyenko/kaminari'
   s.summary     = 'A pagination engine plugin for Rails 3'
   s.description = 'Kaminari is a Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Rails 3'
 
