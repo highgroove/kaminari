@@ -15,7 +15,8 @@ module Kaminari
         c = except(:offset, :limit, :order)
 
         # a workaround for 3.1.beta1 bug. see: https://github.com/rails/rails/issues/406
-        c = c.reorder nil
+        # c = c.reorder nil <-- reorder has been deprecated
+        c = c.except(:order).order nil
 
         # Remove includes only if they are irrelevant
         c = c.except(:includes) unless references_eager_loaded_tables?
